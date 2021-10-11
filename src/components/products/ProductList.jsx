@@ -11,17 +11,17 @@ const ProductList = (props) => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {        
-        async function getProducts() {
-            const uri = `http://localhost/lookup/lookup-api/public/api/v1/${AppEndpoints.PRODUCTS}/3`;
-            const res = await axios.get(uri);
-            const result = res.data;
-        
-            if(result.result)
-                setProducts(result.data);
-        }
-
         getProducts();
      }, [])
+
+    const getProducts = async() => {
+        const uri = `http://localhost/lookup/lookup-api/public/api/v1/${AppEndpoints.PRODUCTS}/3`;
+        const res = await axios.get(uri);
+        const result = res.data;
+    
+        if(result.result)
+            setProducts(result.data);
+    }
    
 
     // const products = [{
