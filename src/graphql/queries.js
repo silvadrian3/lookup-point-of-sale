@@ -8,6 +8,8 @@ export const getProducts = /* GraphQL */ `
       name
       description
       selling_price
+      createdAt
+      updatedAt
     }
   }
 `;
@@ -23,6 +25,8 @@ export const listProductss = /* GraphQL */ `
         name
         description
         selling_price
+        createdAt
+        updatedAt
       }
       nextToken
     }

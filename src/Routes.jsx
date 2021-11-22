@@ -1,16 +1,16 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { AppRoutes } from "./contants/AppRoutes";
+import { AppRoutes } from "./constants/AppRoutes";
 
-import PinLogIn from "./components/login";
+import Authentication from "./components/authentication";
 import Settings from "./components/settings";
-import Home from "./components/home";
+import Dashboard from "./components/dashboard";
 
 const Routes = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path={AppRoutes.LOGIN} component={PinLogIn} />
-        <Route exact path={AppRoutes.HOME} component={Home} />
+        <Route exact path='/' component={Authentication} />
+        <Route exact path={AppRoutes.Dashboard} component={Dashboard} />
         <Route exact path={AppRoutes.SETTINGS} component={Settings} />
       </Switch>
     </Router>

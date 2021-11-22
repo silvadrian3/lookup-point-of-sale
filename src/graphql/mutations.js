@@ -11,6 +11,8 @@ export const createProducts = /* GraphQL */ `
       name
       description
       selling_price
+      createdAt
+      updatedAt
     }
   }
 `;
@@ -24,6 +26,8 @@ export const updateProducts = /* GraphQL */ `
       name
       description
       selling_price
+      createdAt
+      updatedAt
     }
   }
 `;
@@ -37,6 +41,8 @@ export const deleteProducts = /* GraphQL */ `
       name
       description
       selling_price
+      createdAt
+      updatedAt
     }
   }
 `;

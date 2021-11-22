@@ -8,6 +8,8 @@ export const onCreateProducts = /* GraphQL */ `
       name
       description
       selling_price
+      createdAt
+      updatedAt
     }
   }
 `;
@@ -18,6 +20,8 @@ export const onUpdateProducts = /* GraphQL */ `
       name
       description
       selling_price
+      createdAt
+      updatedAt
     }
   }
 `;
@@ -28,6 +32,8 @@ export const onDeleteProducts = /* GraphQL */ `
       name
       description
       selling_price
+      createdAt
+      updatedAt
     }
   }
 `;

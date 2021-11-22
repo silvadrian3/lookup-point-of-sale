@@ -1,16 +1,16 @@
 import React from 'react'
-import { Grid } from "tabler-react";
+// import { Grid } from "tabler-react";
 import Product from './Product';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import { AppEndpoints } from '../../contants/AppEnpoints';
+import { AppEndpoints } from '../../constants/AppEnpoints';
 
 const ProductList = (props) => {
     console.group('ProductList');
     const pCategory = props.category;
     const [products, setProducts] = useState([]);
 
-    useEffect(() => {        
+    useEffect(() => {
         getProducts();
      }, [])
 
@@ -66,16 +66,19 @@ const ProductList = (props) => {
     // }];
 
     return (
-        <Grid.Row cards deck>
-            {
-                products.filter(byCategory => 
-                    byCategory.category_id === pCategory || 
-                    pCategory === 0)
-                .map(
-                    (p, index) => <Product key={index} index={index} product={p} />
-                )
-            }
-        </Grid.Row>
+        <>
+        {/* // <Grid.Row cards deck>
+        //     {
+        //         products.filter(byCategory => 
+        //             byCategory.category_id === pCategory || 
+        //             pCategory === 0)
+        //         .map(
+        //             (p, index) => <Product key={index} index={index} product={p} />
+        //         )
+        //     }
+        // </Grid.Row> */}
+        </>
+
     )
 }
 

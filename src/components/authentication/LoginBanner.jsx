@@ -14,14 +14,12 @@ import React from "react";
 // export default LoginBanner;
 // or
 
-export const LoginBanner = (props) => {
+export const LoginBanner = () => {
 
     return(
-        <>
-        <h1>Hello World!</h1>
-        <img src={props.src} alt={props.alt} />
-        {props.children}
-        </>
+        
+        <img src={'https://app.lookupcloudtech.com/assets/img/lookup-logo.png'} alt={'Lookup Logo'} />
+        
     )    
 }
 

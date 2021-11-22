@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { AppEndpoints } from "../../contants/AppEnpoints";
-import { Tab, TabbedCard, Grid, Card } from "tabler-react";
-import "tabler-react/dist/Tabler.css";
+import { AppEndpoints } from "../../constants/AppEnpoints";
+// import { Tab, TabbedCard, Grid, Card } from "tabler-react";
+// import "tabler-react/dist/Tabler.css";
 import "./Home.css"
 import ProductList from "../products/ProductList";
 
-class Home extends Component {
+class Dashboard extends Component {
 
     constructor(props) {
         super(props)
@@ -36,7 +36,7 @@ class Home extends Component {
             <div className="home-container">
             <div className="welcome-text">{`Welcome, ${this.state.user.firstname}!`}</div>
             
-            <Grid.Row cards deck>
+            {/* <Grid.Row cards deck>
                 <Grid.Col md={9}>
                 
                     <TabbedCard initialTab="All">
@@ -59,7 +59,7 @@ class Home extends Component {
                         deserunt eaque error nulla temporibus!`}
                     />
                 </Grid.Col>
-            </Grid.Row>
+            </Grid.Row> */}
             </div>
         )
     }
@@ -107,4 +107,4 @@ class Home extends Component {
 
 
 
-export default Home
+export default Dashboard
