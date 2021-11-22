@@ -3,7 +3,6 @@ import axios from "axios";
 import { AppEndpoints } from "../../constants/AppEnpoints";
 // import { Tab, TabbedCard, Grid, Card } from "tabler-react";
 // import "tabler-react/dist/Tabler.css";
-import "./Home.css"
 import ProductList from "../products/ProductList";
 
 class Dashboard extends Component {

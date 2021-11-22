@@ -1,5 +1,13 @@
 export const AppRoutes = {
-    LOGIN: '/',
-    HOME: '/home',
-    SETTINGS: '/settings'
-}
+  AUTHENTICATION: "/",
+  DASHBOARD: "/dashboard",
+  SETTINGS: "/settings",
+  SUPPLIERS: "/suppliers",
+  PRODUCTS: "/products",
+  STOCKSMANAGEMENT: "/stock-management",
+  CUSTOMERS: "/customers",
+  SALES: "/sales",
+  EXPENSES: "/expenses",
+  REPORTS: "/reports",
+  PROFILE: "/profile",
+};

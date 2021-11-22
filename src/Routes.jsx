@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { AppRoutes } from "./constants/AppRoutes";
-
 import Authentication from "./components/authentication";
 import Settings from "./components/settings";
 import Dashboard from "./components/dashboard";

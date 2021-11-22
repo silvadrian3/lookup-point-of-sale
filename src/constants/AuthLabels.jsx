@@ -6,5 +6,5 @@ export const AuthLabels = {
   BACK_TO_SIGN_IN: "Back to Login",
   SIGN_IN_ACTION: "LOGIN",
   SIGN_IN_TEXT: "Login",
-  SIGN_UP_SUBMIT_BUTTON_TEXT: "SIGNUP"
-}
+  SIGN_UP_SUBMIT_BUTTON_TEXT: "SIGNUP",
+};
