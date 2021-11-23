@@ -54,7 +54,7 @@ const Authentication = () => {
           <img
             src="https://s3.ap-southeast-1.amazonaws.com/lookup.ph/assets/website/lookup-logo.png"
             alt="lookup logo"
-            class="pb-4"
+            className="pb-4"
           />
           A cloud-based business management system designed for online sellers
           to organize products, track deliveries, create sales invoices and
