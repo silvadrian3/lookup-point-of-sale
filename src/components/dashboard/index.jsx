@@ -64,8 +64,8 @@ class Dashboard extends Component {
     }
 
     componentDidMount(){
-        this.getUserProfile();
-        this.getProductCategories();
+        //this.getUserProfile();
+        //this.getProductCategories();
     }
 
     getUserProfile = async() => {

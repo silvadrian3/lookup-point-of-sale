@@ -1,5 +1,5 @@
 body {
-  color: #454545;
+  color: #222222;
 }
 
 .welcome-message {
@@ -25,6 +25,7 @@ body {
     --amplify-primary-color: #6ca441;
     --amplify-primary-tint: #a1cc7f;
     --amplify-primary-shade: #86be5b;
+    color:#202020;
   }
 
   /* .toast {

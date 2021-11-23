@@ -9,5 +9,5 @@ export const AppRoutes = {
   SALES: "/sales",
   EXPENSES: "/expenses",
   REPORTS: "/reports",
-  PROFILE: "/profile",
+  PROFILE: "/profile"
 };
