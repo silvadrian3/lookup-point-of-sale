@@ -5,7 +5,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { AppEndpoints } from '../../constants/AppEnpoints';
 
-const ProductList = (props) => {
+const Products = (props) => {
     console.group('ProductList');
     const pCategory = props.category;
     const [products, setProducts] = useState([]);
@@ -82,4 +82,4 @@ const ProductList = (props) => {
     )
 }
 
-export default ProductList
+export default Products

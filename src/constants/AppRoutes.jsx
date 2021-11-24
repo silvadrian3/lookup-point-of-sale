@@ -4,7 +4,7 @@ export const AppRoutes = {
   SETTINGS: "/settings",
   SUPPLIERS: "/suppliers",
   PRODUCTS: "/products",
-  STOCKSMANAGEMENT: "/stock-management",
+  STOCKSMANAGEMENT: "/stocks-management",
   CUSTOMERS: "/customers",
   SALES: "/sales",
   EXPENSES: "/expenses",
