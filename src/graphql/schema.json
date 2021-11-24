@@ -39,7 +39,7 @@
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "listProductss",
+          "name" : "listProducts",
           "description" : null,
           "args" : [ {
             "name" : "filter",
