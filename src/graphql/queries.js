@@ -13,13 +13,13 @@ export const getProducts = /* GraphQL */ `
     }
   }
 `;
-export const listProducts = /* GraphQL */ `
+export const ListProducts = /* GraphQL */ `
   query ListProducts(
     $filter: ModelProductsFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listProducts(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    ListProducts(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
         name
