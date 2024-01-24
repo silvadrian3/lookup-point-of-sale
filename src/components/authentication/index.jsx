@@ -53,7 +53,7 @@ const Authentication = () => {
         <h2>
           <img
             src="https://s3.ap-southeast-1.amazonaws.com/lookup.ph/assets/website/lookup-logo.png"
-            alt="lookup logo"
+            alt="lookup"
             className="pb-4"
           />
           A cloud-based business management system designed for online sellers

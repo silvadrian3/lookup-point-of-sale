@@ -14,7 +14,7 @@ const Sidebar = ({ showSidebar, userInfo, clickLogout }) => {
           <div className="logo-grid">
             <img
               src="https://s3.ap-southeast-1.amazonaws.com/lookup.ph/assets/website/lookup-logo.png"
-              alt="lookup logo"
+              alt="lookup"
               width="80px"
             />
             <button>

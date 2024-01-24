@@ -1,5 +1,5 @@
 {
-  "name": "lookup-pos",
+  "name": "lookup-expense-tracker-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -42,22 +42,17 @@
       "react-app/jest"
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
   "devDependencies": {
-    "autoprefixer": "^10.4.0",
-    "postcss": "^8.3.11",
-    "postcss-cli": "^9.0.1",
-    "tailwindcss": "^2.2.19"
+    "autoprefixer": "^10.3.7",
+    "browserslist": "^4.21.11",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "prettier-plugin-tailwindcss": "^0.1.11",
+    "tailwindcss": "^2.2.17"
   }
 }
