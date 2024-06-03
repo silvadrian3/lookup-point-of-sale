@@ -1,0 +1,76 @@
+service: expense-tracker-app-api
+frameworkVersion: '3'
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: ap-southeast-1
+  lambdaHashingVersion: 20201221
+  versionFunctions: false
+  iam:
+    role:
+      statements:
+        - Effect: "Allow"
+          Action:
+            # - "s3:ListBucket"
+            # - "s3:GetObject"
+            # - "s3:PutObject"
+            # - "s3:DeleteObject"
+            - "dynamodb:PutItem"
+            - "dynamodb:UpdateItem"
+            - "dynamodb:DeleteItem"
+            - "dynamodb:GetItem"
+            - "dynamodb:Query"
+            - "dynamodb:Scan"
+            - "dynamodb:BatchGetItem"
+            - "dynamodb:BatchWriteItem"
+            # - "cognito-idp:AdminCreateUser"
+            # - "cognito-idp:AdminAddUserToGroup"
+            # - "cognito-idp:AdminRemoveUserFromGroup"
+            # - "cognito-idp:AdminUpdateUserAttributes"
+            # - "cognito-idp:AdminGetUser"
+          Resource: "*"
+  httpApi:
+    cors:
+      allowedOrigins: "*"
+      allowedHeaders:
+        - Content-Type
+        - X-Amz-Date
+        - Authorization
+        - X-Api-Key
+        - X-Amz-Security-Token
+        - X-Amz-User-Agent
+      allowedMethods:
+        - OPTIONS
+        - GET
+        - POST
+        - PUT
+        - DELETE
+
+functions:
+  graphql:
+    handler: handler.handler
+    events:
+      - httpApi:
+          path: /graphql
+          method: POST
+
+package: 
+  include:
+    - schema.graphql
+plugins:
+  - serverless-offline
+  - serverless-webpack
+
+resources:
+  Resources:
+    ExpenseTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: ExpenseTable
+        AttributeDefinitions:
+          - AttributeName: id
+            AttributeType: S
+        KeySchema:
+          - AttributeName: id
+            KeyType: HASH
+        BillingMode: PAY_PER_REQUEST
