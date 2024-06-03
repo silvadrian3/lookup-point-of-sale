@@ -1,0 +1,23 @@
+type Expense {
+  id: ID!
+  name: String!
+  price: Float!
+  description: String
+}
+
+input ExpenseInput {
+  name: String!
+  price: Float!
+  description: String
+}
+
+type Query {
+  getExpense(id: ID!): Expense
+  listExpenses: [Expense]
+}
+
+type Mutation {
+  createExpense(input: ExpenseInput!): Expense
+  updateExpense(id: ID!, input: ExpenseInput!): Expense
+  deleteExpense(id: ID!): Boolean
+}

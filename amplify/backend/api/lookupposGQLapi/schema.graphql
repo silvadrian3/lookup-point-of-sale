@@ -1,6 +1,0 @@
-type Products @model {
-  id: ID!
-  name: String!
-  description: String
-  selling_price: Float
-}
