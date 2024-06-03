@@ -1,0 +1,13 @@
+{
+    "version": "2",
+    "headers": {
+      "content-type": "application/json"
+    },
+    "isBase64Encoded": false,
+    "requestContext": {
+      "http": {
+        "method": "POST"
+      }
+    },
+    "body": "{\"operationName\":\"GetListOfExpenses\",\"variables\":{},\"query\":\"query GetListOfExpenses {\n listExpenses {\n id\n name\n price\n description\n }\n}\"}"
+  }

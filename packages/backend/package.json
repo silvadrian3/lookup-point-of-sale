@@ -1,0 +1,28 @@
+{
+  "name": "serverless-graphql-api",
+  "version": "1.0.0",
+  "description": "Serverless GraphQL Apollo API using AWS Lambda and DynamoDB",
+  "main": "handler.js",
+  "scripts": {
+    "dev": "sls offline start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/client": "^3.5.0",
+    "@aws-sdk/client-dynamodb": "^3.572.0",
+    "@aws-sdk/util-dynamodb": "^3.572.0",
+    "apollo-server-lambda": "^3.13.0",
+    "graphql": "^16.8.1"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "serverless": "^3.22.0",
+    "serverless-offline": "^13.5.0",
+    "serverless-webpack": "^5.14.0",
+    "webpack": "^5.91.0",
+    "webpack-node-externals": "^3.0.0"
+  }
+}

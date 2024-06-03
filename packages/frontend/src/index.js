@@ -1,18 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-import reportWebVitals from './reportWebVitals';
-// import Amplify from "aws-amplify";
-// import awsExports from "./aws-exports";
-// Amplify.configure(awsExports);
+import React from "react";
+import ReactDOM from "react-dom";
+import { ApolloProvider } from "@apollo/client";
+import client from "./apollo-client";
+import "./index.css";
+import App from "./App";
+
+import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
+import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ApolloProvider client={client}>
+      <App />
+    </ApolloProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
